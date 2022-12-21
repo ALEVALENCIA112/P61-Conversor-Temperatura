@@ -65,7 +65,7 @@
          <item>
           <widget class="QLCDNumber" name="outFahr">
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(252, 175, 62);</string>
+            <string notr="true">background-color: rgb(252, 175, 162);</string>
            </property>
            <property name="intValue" stdset="0">
             <number>32</number>
