@@ -103,6 +103,9 @@
             <string notr="true">
 background-color: rgb(85, 85, 127);</string>
            </property>
+           <property name="intValue" stdset="0">
+            <number>273</number>
+           </property>
           </widget>
          </item>
          <item>
