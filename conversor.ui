@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>411</width>
+    <width>700</width>
     <height>309</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Conversor</string>
@@ -85,6 +91,33 @@
         </layout>
        </widget>
       </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Kelvin</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLCDNumber" name="outKel">
+           <property name="styleSheet">
+            <string notr="true">
+background-color: rgb(85, 85, 127);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDial" name="inKel">
+           <property name="minimum">
+            <number>255</number>
+           </property>
+           <property name="maximum">
+            <number>372</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
      </layout>
     </widget>
    </item>
@@ -139,6 +172,22 @@
     <hint type="destinationlabel">
      <x>222</x>
      <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inKel</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>outKel</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>579</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>90</y>
     </hint>
    </hints>
   </connection>
