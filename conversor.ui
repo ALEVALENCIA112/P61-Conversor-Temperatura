@@ -20,8 +20,8 @@
    <string>Conversor</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="recursos.qrc">
-    <normaloff>:/recursos/img/icono.png</normaloff>:/recursos/img/icono.png</iconset>
+   <iconset resource="Resources.qrc">
+    <normaloff>:/recursos/img/termometro.png</normaloff>:/recursos/img/termometro.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -143,7 +143,7 @@ background-color: rgb(85, 85, 127);</string>
   </layout>
  </widget>
  <resources>
-  <include location="recursos.qrc"/>
+  <include location="Resources.qrc"/>
  </resources>
  <connections>
   <connection>
